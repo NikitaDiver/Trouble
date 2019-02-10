@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Home Page new button</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="file:///C:/Users/nikit/Desktop/Cources/Project/Project Home Page.css">	
+	<style>
+		.menu { 
+			display: flex;
+			justify-content: center;           
+			margin: 0 auto;
+			border-top-left-radius: 300px;
+			border-top-right-radius: 300px;
+			border-bottom-left-radius: 150px;
+			border-bottom-right-radius: 150px;                                                  
+			background: url(file:///C:/Users/nikit/Desktop/Cources/Project/menu2.png);
+			height: 252px;     
+			width: 1000px;         
+		}
+		.menu ul { 
+		    font-size: 13pt;            
+		    margin: 0px;             
+		    padding: 0px;
+		    margin-top: 202px;
+		    margin-left: 328px;              
+		}            
+		.menu li {             
+		    float: left;          
+		    position: relative;                
+		    list-style-type: none; 
+		    border-radius: 20px;          
+		}             
+		.menu a {             
+		    display: block;             
+		    text-decoration: none;           
+		    padding: 14px 10px 14px 10px;            
+		    color: #9a16ff;              
+		}             
+		.menu a:hover{             
+		    color: #ff9999;       
+		}             
+		.menu li:hover {             
+		    background: lightblue;      
+		}             
+		             
+		/* Раскрывающееся меню */              
+		             
+		.menu ul li ul {             
+		    margin: 0px;             
+		    position: absolute;              
+		    width: 10em;
+		    color: black;  
+		}            
+		.menu ul li ul li a{
+			color: black;
+		}  
+		.menu ul li ul li  {             
+		    width: 100%;
+		    background-color: #faffce;                
+		}            
+		.menu ul li ul {             
+		    display: none;             
+		}             
+		.menu ul li:hover ul {             
+		    display: block;             
+		}          
+		             
+		/* Многоуровневое раскрывающееся меню */              
+		             
+		.menu ul li ul li ul   {             
+		    visibility: hidden;             
+		    top: -1px;             
+		    left: 10em;              
+		}              
+		.menu ul li ul li:hover ul {             
+		    visibility: visible;  /* всплывает второе подменю */             
+		}             
+		.menu ul li ul li:hover ul li ul { /*прячет третье меню до наведения мыши*/           
+		    visibility: hidden;             
+		}              
+		.menu ul li ul li ul li:hover ul { /*всплывает третье меню*/             
+		    visibility: visible;
+		    height: 300px;
+		    overflow-x: hidden;             
+		}
+
+		/* LOG In/Registrartion*/
+
+		.multiselect {
+			margin-bottom: 230px;
+			margin-left: 160px;
+			width: 170px;
+		}
+		.selectBox {
+		  position: relative;
+		  margin-right: 110px;
+		}
+		.selectBox select {
+		  width: 100%;
+		  font-weight: bold;
+		}
+		.overSelect {
+		  position: absolute;
+		  left: 0;
+		  right: 0;
+		  top: 0;
+		  bottom: 0;
+		}
+		#checkboxes {
+		  display: none;
+		}
+
+		#checkboxes label {
+		  display: block;
+		}
+		button {
+			margin-top: 2px;
+		}
+		.come {
+			margin-right: 16.5px;
+			margin-bottom: 2px; 
+	</style>
+	<script>
+		var expanded = false;
+		function showCheckboxes() {
+		   var checkboxes = document.getElementById("checkboxes");
+		   if (!expanded) {
+		     checkboxes.style.display = "block";
+		     expanded = true;
+		   } else {
+		     checkboxes.style.display = "none";
+		     expanded = false;
+		   }
+		}
+	</script>
+</head>
+<body>
+	<div class="bg">
+<div class="menu" id="up">             
+	    <ul>             
+	      	<li><b><a href="file:///C:/Users/nikit/Desktop/Cources/Project/Project%20Home%20Page.html">Главная</a></b></li>             
+	      	<li><b><a href="#">Места</a></b>             
+	            <ul>             
+	                <li><a href="#">Египет</a>
+		                <ul>             
+		                    <li><a href="#">Отель</a>
+		                    	<ul>             
+		                            <li><a href="https://www.booking.com/hotel/eg/continental-plaza-beach-amp-resort-qesm-sharm-ash-sheikh12.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Continental Plaza Beach & Resort</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/tropitel-naama-bay-sharm-el-sheikh.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=2;hpos=2;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Tropitel Naama Bay Hotel</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/baron-resort-sharm-el-sheikh.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=3;hpos=3;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Baron Resort Sharm El Sheikh</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/xperience-sea-breeze-resort.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=4;hpos=4;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Xperience Sea Breeze Resort</a></li>
+		                            <li><a href="https://www.booking.com/hotel/eg/club-reef.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=5;hpos=5;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Club Reef Village</a></li>
+		                            <li><a href="https://www.booking.com/hotel/eg/park-inn-sharm-el-sheikh.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=7;hpos=7;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Parrotel Aqua Park Resort Ex. Park Inn by Radisson</a></li>             
+		                        </ul> 
+		                    </li>             
+		                    <li><a href="#">Пустыня</a>
+		                    	<ul>             
+		                            <li><a href="#">Багги</a></li>             
+		                            <li><a href="#">Квадроцыкл</a></li>             
+		                            <li><a href="#">Выживание</a></li>             
+		                            <li><a href="#">Мото</a></li>             
+		                      	</ul> 
+		                    </li>             
+		                    <li><a href="#">Сафари</a>             
+		                        <ul>             
+		                            <li><a href="#">Север</a></li>             
+		                            <li><a href="#">Юг</a></li>             
+		                            <li><a href="#">Корабли</a></li>             
+		                            <li><a href="#">Акулы</a></li>             
+		                        </ul>             
+		                    </li>                          
+		                </ul>
+	                </li>             
+	                <li><a href="#">Мексика</a>
+		                <ul>             
+		                    <li><a href="#">Отель</a>
+		                    	<ul>             
+		                            <li><a href="https://www.booking.com/hotel/eg/continental-plaza-beach-amp-resort-qesm-sharm-ash-sheikh12.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Continental Plaza</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/tropitel-naama-bay-sharm-el-sheikh.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=2;hpos=2;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Tropitel</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/baron-resort-sharm-el-sheikh.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=3;hpos=3;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Sheikh</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/xperience-sea-breeze-resort.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=4;hpos=4;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Xperience Sea</a></li>
+		                            <li><a href="https://www.booking.com/hotel/eg/club-reef.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=5;hpos=5;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Club Shark</a></li>            
+		                        </ul> 
+		                    </li>             
+		                    <li><a href="#">Пещеры</a>
+		                    	<ul>                          
+		                            <li><a href="#">Сталагмитовые</a></li>             
+		                            <li><a href="#">Мая</a></li>                         
+		                      	</ul> 
+		                    </li>             
+		                    <li><a href="#">Дайвинг</a>             
+		                        <ul>             
+		                            <li><a href="#">Акулы</a></li>             
+		                            <li><a href="#">Пещеры</a></li>             
+		                            <li><a href="#">Музеи</a></li>             
+		                            <li><a href="#">Рифы</a></li>             
+		                        </ul>             
+		                    </li>                          
+		                </ul>
+	                </li>             
+	                <li><a href="#">Украина</a>
+		                <ul>             
+		                    <li><a href="#">Отель</a>
+		                    	<ul>             
+		                            <li><a href="https://www.booking.com/hotel/eg/continental-plaza-beach-amp-resort-qesm-sharm-ash-sheikh12.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Continental</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/tropitel-naama-bay-sharm-el-sheikh.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=2;hpos=2;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Колиба</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/baron-resort-sharm-el-sheikh.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=3;hpos=3;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Mercuri</a></li>             
+		                            <li><a href="https://www.booking.com/hotel/eg/xperience-sea-breeze-resort.ru.html?aid=319915;label=sherm-el-sheikh-YYQeZBvUqsajy_qkwp3KqgS166824886274%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-1259989497%3Alp9061016%3Ali%3Adec%3Adm;sid=baf5dca3394cb874d44034b8ae3b26c5;dest_id=-302053;dest_type=city;dist=0;hapos=4;hpos=4;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1549201424;srpvid=7ad6608828b40357;type=total;ucfs=1&#hotelTmpl" target="_blank">Санаторий</a></li>             
+		                        </ul> 
+		                    </li>             
+		                    <li><a href="#">Пещеры</a>
+		                    	<ul>             
+		                            <li><a href="#">Оптимистическая</a></li>             
+		                            <li><a href="#">Тернопольская</a></li>                         
+		                      	</ul> 
+		                    </li>             
+		                    <li><a href="#">Горы</a>             
+		                        <ul>             
+		                            <li><a href="#">Пеший тур</a></li>             
+		                            <li><a href="#">Лыжи</a></li>             
+		                            <li><a href="#">Борд</a></li>                         
+		                        </ul>             
+		                    </li>
+		                    <li><a href="#">Дайвинг</a>
+		                    	<ul>             
+		                            <li><a href="#">Малинский карьер</a></li>             
+		                            <li><a href="#">Соколовский карьер</a></li>             
+		                            <li><a href="#">Днепро</a></li>             
+		                            <li><a href="#">Дибровский карьер</a></li>             
+		                      	</ul> 
+		                    </li>                          
+		                </ul>
+	                </li>            
+	            </ul>             
+	        </li>             
+	        <li><b><a href="#">Формат</a></b>            
+	            <ul>             
+	                <li><a href="#">Водный спорт</a>
+						<ul>             
+		                    <li><a href="#">Дайвинг</a></li>             
+		                    <li><a href="#">Серфинг</a></li>             
+		                    <li><a href="#">Виндсерфинг</a></li>             
+		                    <li><a href="#">Яхтинг</a></li>             
+		               	</ul>
+	                </li>             
+	                <li><a href="#">Горы</a>
+						<ul>             
+		                    <li><a href="#">Всход на пик</a></li>             
+		                    <li><a href="#">Спелеология</a></li>
+		                    <li><a href="#">Планеризм</a></li>                          
+		               	</ul>
+	                </li>             
+	                <li><a href="#">Пеший тур</a>
+						<ul>             
+		                    <li><a href="#">Выживание</a></li>             
+		                    <li><a href="#">Экскурсии</a></li>             
+		                    <li><a href="#">Заблудившиеся</a></li>            
+		               	</ul>
+	                </li>             
+	                <li><a href="#">Гонки</a>
+						<ul>             
+		                    <li><a href="#">Вело</a></li>             
+		                    <li><a href="#">Мото</a></li>             
+		                    <li><a href="#">Багги</a></li>             
+		                    <li><a href="#">Яхтинг</a></li>
+		                    <li><a href="#">Квадроцыклы</a></li>             
+		               	</ul>
+	                </li>             
+	            </ul>             
+	        </li>             
+	    </ul>
+	<div class="multiselect">
+      <div class="selectBox" onclick="showCheckboxes()">
+        <select>
+          <option>Вход</option>
+        </select>
+        <div class="overSelect"></div>
+      </div>
+      <div id="checkboxes">
+          Login<input type="login" id="one" />
+          Password<input type="password" id="two" />
+          <button class="come" onclick="location.href = 'file:///C:/Users/nikit/Desktop/Cources/Lesson%208.html'">Вход</button>
+      	 <button onclick="location.href = 'file:///C:/Users/nikit/Desktop/Cources/Project/Project%20Home%20Page%20registr.html'">Регистрация</button></label>
+      </div>
+    </div><br>
+    </div>            
+	<div class="block">
+  		<div class="b1"><center><h2>Weather</h2></center>
+			<a href="https://www.gismeteo.ua/weather-kyiv-4944/" target="_blank"><center><b><h3>Ukraine</h3></b></center>
+			<div class="bbb">
+				<div><center><b>+1 +2</b><br><img class="sunb1" src="file:///C:/Users/nikit/Desktop/Cources/Project/rain.png"></center></div> <div><center><b>+2 +4</b><br><img class="sunb1" src="file:///C:/Users/nikit/Desktop/Cources/Project/sun.png"></center></div>
+			</div></a><br>
+			<a href="https://www.gismeteo.ua/weather-sharm-el-sheikh-6617/" target="_blank"><center><b><h3>Egypt</h3></b></center>
+			<div class="bbb">
+				<div><center><b>+24 +22</b><br><img class="sunb1" src="file:///C:/Users/nikit/Desktop/Cources/Project/sun.png"></center></div> <div><center><b>+20 +22</b><br><img class="sunb1" src="file:///C:/Users/nikit/Desktop/Cources/Project/sun.png"></center></div>
+			</div></a><br>
+			<a href="https://www.gismeteo.ua/weather-cancun-14338/" target="_blank"><center><b><h3>Mexico</h3></b></center>
+			<div class="bbb">
+				<div><center><b>+24 +22</b><br><img class="sunb1" src="file:///C:/Users/nikit/Desktop/Cources/Project/sun.png"></center></div> <div><center><b>+20 +22</b><br><img class="sunb1" src="file:///C:/Users/nikit/Desktop/Cources/Project/rain.png"></center></div>
+			</div></a>
+		</div>
+  		<div class="b2">
+  			<center><div class="text"><b>Вы можете посмотреть видео с нашего последнего тура:</b></div>
+  			<iframe width="430" height="275" src="https://www.youtube.com/embed/Cy4HWGO2aX8" frameborder="0"></iframe>
+  			<table border="1">
+				<caption><b>Цены на наши туры</b></caption>
+				<tr>
+					<th></th><th class="onep">1 Чел.</th><th id="twop">2 Чел.</th><th class="threep">3 Чел.</th>
+				</tr>
+				<tr>
+					<th>Египет сафари</th><td><center>1400$</center></td><td><center>2000$</center></td><td><center>2300$</center></td>
+				</tr>
+				<tr>
+					<th>Украина спелеология</th><td><center>600$</center></td><td class="aa"><center>800$</center></td><td><center>900$</center></td>
+				</tr>
+				<tr>
+					<th>Мексика пещеры</th><td><center>3500$</center></td><td><center>6000$</center></td><td><center>8000$</center></td>
+				</tr>
+				<tr>
+					<th>Египет выживание</th><td><center>1000$</center></td><td><center>1400$</center></td><td><center>1700$</center></td>
+				</tr>
+			</table>
+			<p id="news1"><b>Сафари на Юг Красного Моря</b></p></center>
+			<p>Это был жаркий месяц март, у нас был тур на Юг Красного Моря. Во время тура мы побывали на многих затонувших кораблях, увидели акул и просто круто отдохнули.<br><br>
+			Наш тур длился 8 дней в открытом море, не выходя на сушу, только на воде или под ней! На перешейках было многим "не очень" - сильно укачивало, но у египтян есть одни таблетки (их точное применение не поиню). Ты пьеш их и тебя в течении 5 минут действительно перестает укачивать, но через 15-20 минут ты засыпаешь на ходу.
+			<img class="shark" src="file:///C:/Users/nikit/Desktop/Cources/Project/shark.jpg"> Мы были очень рады встрече с акулой-молот, это был подросток который недавно начал жить самостоятель.</p>
+			<center><p id="news2"><b>Сафари на Север Красного Моря</b></p></center>
+			<p>Это был жаркий месяц март, у нас был тур на Север Красного Моря. Во время тура мы побывали на многих затонувших кораблях, увидели акул и просто круто отдохнули.<br><br>
+			Наш тур длился 8 дней в открытом море, не выходя на сушу, только на воде или под ней! На перешейках было многим "не очень" - сильно укачивало, но у египтян есть одни таблетки (их точное применение не поиню). Ты пьеш их и тебя в течении 5 минут действительно перестает укачивать, но через 15-20 минут ты засыпаешь на ходу.
+			<img class="ship" src="file:///C:/Users/nikit/Desktop/Cources/Project/ship.jpg"> Мы были очень рады встрече с акулой-молот, это был подросток который недавно начал жить самостоятель. Мы с ним поплавали около 10 минут и потом он уплыл в бездну.</p>
+			<center><p id="news3"><b>Dahab Blue Hole</b></p></center>
+			<p>Это был жаркий месяц март, у нас был тур на Запад Красного Моря. Во время тура мы побывали на многих затонувших кораблях, увидели акул и просто круто отдохнули.<br><br>
+			Наш тур длился 8 дней в открытом море, не выходя на сушу, только на воде или под ней! На перешейках было многим "не очень" - сильно укачивало, но у египтян есть одни таблетки (их точное применение не поиню). Ты пьеш их и тебя в течении 5 минут действительно перестает укачивать, но через 15-20 минут ты засыпаешь на ходу.
+			<img class="shark" src="file:///C:/Users/nikit/Desktop/Cources/Project/dahab.jpg"> Мы были очень рады встрече с акулой-молот, это был подросток который недавно начал жить самостоятель.</p>
+			<center><p id="news4"><b>Salem Express</b></p></center>
+			<p>Это был жаркий месяц март, у нас был тур на Восток Красного Моря. Во время тура мы побывали на многих затонувших кораблях, увидели акул и просто круто отдохнули.<br><br>
+			Наш тур длился 8 дней в открытом море, не выходя на сушу, только на воде или под ней! На перешейках было многим "не очень" - сильно укачивало, но у египтян есть одни таблетки (их точное применение не поиню). Ты пьеш их и тебя в течении 5 минут действительно перестает укачивать, но через 15-20 минут ты засыпаешь на ходу.
+			<img class="ship" src="file:///C:/Users/nikit/Desktop/Cources/Project/salem.jpg"> Мы были очень рады встрече с акулой-молот, это был подросток который недавно начал жить самостоятель. Мы с ним поплавали около 10 минут и потом он уплыл в бездну.</p>
+  		</div>
+  		<div class="b3"><center><h2>News</h2>
+  		<div class="textb31"><a href="#news1"><b>Сафари на Юг Красного Моря<br></b><img class="sharkb3" src="file:///C:/Users/nikit/Desktop/Cources/Project/shark.jpg"><p>Это был жаркий месяц март, у нас был тур на Север Красного Моря. Во время тура мы побывали...</p></a></div>
+  		<div class="textb3"><a href="#news2"><b>Сафари на Север Красного Моря<br></b><img class="sharkb3" src="file:///C:/Users/nikit/Desktop/Cources/Project/ship.jpg"><p>Это был жаркий месяц март, у нас был тур на Север Красного Моря. Во время тура мы побывали...</p></a></div>
+  		<div class="textb3"><a href="#news3"><b>Dahab Blue Hole<br></b><img class="sharkb3" src="file:///C:/Users/nikit/Desktop/Cources/Project/dahab.jpg"><p>Это был жаркий месяц март, у нас был тур на Север Красного Моря. Во время тура мы побывали...</p></a></div>
+  		<div class="textb3"><a href="#news4"><b>Salem Express<br></b><img class="sharkb3" src="file:///C:/Users/nikit/Desktop/Cources/Project/salem.jpg"><p>Это был жаркий месяц март, у нас был тур на Север Красного Моря. Во время тура мы побывали...</p></a></div>
+  		</center>
+  		</div>
+  	</div>
+		<footer>
+	  		<div class="container">
+		    	<div class="name"><span>My project © 2019</span></div>
+		    	<div class="upto"><a href="#up">UP</a></div>
+		    	<div class="contact">
+		    	<a>Наши контакты:</a>
+				<a>+380987654321</a>
+				<a>+380987638376</a>
+				<a>MyProject@gmail.com</a>
+				</div>
+	    		<div class="footer-col"><a href="mailto:nikita.zag.diver@gmail.com">Написать предложение</a></div>
+  			</div>
+		</footer>
+	</div>
+</body>
+</html>
